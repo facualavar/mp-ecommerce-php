@@ -88,7 +88,9 @@
                             </div>
                         </div>
                         <div class="as-accessories-results  as-search-desktop">
-                            <h1>Pago Finalizado con Exito</h1>
+                            <div class="alert alert-success" role="alert">
+                                <h1>Pago Finalizado con Exito</h1>
+                            </div>      
                         </div>
                     </div>
                 </div>

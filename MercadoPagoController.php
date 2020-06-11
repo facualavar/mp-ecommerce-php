@@ -60,6 +60,7 @@ class MercadoPago
             "failure" => "https://facualavar-mp-ecommerce-php.herokuapp.com/failure.php",
             "pending" => "https://facualavar-mp-ecommerce-php.herokuapp.com/pending.php"
         );
+        $preference->notification_url = "https://facualavar-mp-ecommerce-php.herokuapp.com/notificaciones.php";
         $preference->payment_methods = array(
             "excluded_payment_methods" => array(
                 array("id" => "amex")
@@ -73,7 +74,7 @@ class MercadoPago
         $preference->external_reference = 'facualavar@gmail.com';
         $preference->save();
         
-        header('Location: '. $preference->init_point);
+        //header('Location: '. $preference->init_point);
     }
 }
 

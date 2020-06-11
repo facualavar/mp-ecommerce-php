@@ -88,7 +88,9 @@
                             </div>
                         </div>
                         <div class="as-accessories-results  as-search-desktop">
-                            <h1>Pago Pendiente</h1>
+                            <div class="alert alert-warning" role="alert">
+                                <h1>Pago Pendiente</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
