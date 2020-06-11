@@ -31,13 +31,27 @@ class MercadoPago
             array_push($items, $item);
         }
 
+        $payer = new MercadoPago\Payer();
+        $payer->name = "Lalo Landa";
+        $payer->email = "test_user_63274575@testuser.com";
+        $payer->phone = array("area_code" => "11", "number" => "222233333");
+        $payer->identification = array(
+            "type" => "DNI",
+            "number" => "12345678"
+        );
+        $payer->address = array(
+            "street_name" => "False",
+            "street_number" => 123,
+            "zip_code" => "1111"
+        );
+
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
         $preference->items = $items;
         $preference->external_reference = 'facualavar@gmail.com';
         $preference->save();
         
-        //header('Location: '. $preference->init_point);
+        header('Location: '. $preference->init_point);
     }
 }
 
