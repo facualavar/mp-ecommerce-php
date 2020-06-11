@@ -49,8 +49,6 @@ class MercadoPago
             "zip_code" => "1111"
         );
 
-        
-
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
         $preference->items = $items;
@@ -68,7 +66,7 @@ class MercadoPago
             "excluded_payment_types" => array(
                 array("id" => "atm")
             ),
-            "installaments" => 6
+            "installments" => 6
         );
         $preference->auto_return = "approved";
         $preference->external_reference = 'facualavar@gmail.com';
