@@ -39,6 +39,7 @@ class MercadoPago
         $payer->name = "Lalo";
         $payer->surname = "Landa";
         $payer->email = "test_user_63274575@testuser.com";
+        $payer->date_created = new DateTime();
         $payer->phone = array("area_code" => "011", "number" => "2222-33333");
         $payer->identification = array(
             "type" => "DNI",
@@ -46,7 +47,7 @@ class MercadoPago
         );
         $payer->address = array(
             "street_name" => "False",
-            "street_number" => 123,
+            "street_number" => "123",
             "zip_code" => "1111"
         );
 
