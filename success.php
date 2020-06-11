@@ -90,7 +90,10 @@
                         <div class="as-accessories-results  as-search-desktop">
                             <div class="alert alert-success" role="alert">
                                 <h1>Pago Finalizado con Exito</h1>
-                            </div>      
+                            </div>
+                            <h3>collection_id: <span><?php echo $_GET['collection_id'] ?></span></h3><br>
+                            <h3>payment_type: <span><?php echo $_GET['payment_type'] ?></span></h3><br>
+                            <h3>external_reference: <span><?php echo $_GET['external_reference'] ?></span></h3>
                         </div>
                     </div>
                 </div>
