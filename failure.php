@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="as-accessories-results  as-search-desktop">
-                            <h1>Pago Rechazado</h1>
+                            <h1>Pago NO finalizado</h1>
                         </div>
                     </div>
                 </div>
