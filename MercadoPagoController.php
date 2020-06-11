@@ -45,9 +45,27 @@ class MercadoPago
             "zip_code" => "1111"
         );
 
+        
+
         // Crea un objeto de preferencia
         $preference = new MercadoPago\Preference();
         $preference->items = $items;
+        $preference->payer = $payer;
+        $preference->back_urls = array(
+            "success" => "https://facualavar-mp-ecommerce-php.herokuapp.com/success.php",
+            "failure" => "https://facualavar-mp-ecommerce-php.herokuapp.com/failure.php",
+            "pending" => "https://facualavar-mp-ecommerce-php.herokuapp.com/pending.php"
+        );
+        $preference->payment_methods = array(
+            "excluded_payment_methods" => array(
+                array("id" => "amex")
+            ),
+            "excluded_payment_types" => array(
+                array("id" => "atm")
+            ),
+            "installaments" => 6
+        );
+        $preference->auto_return = "approved";
         $preference->external_reference = 'facualavar@gmail.com';
         $preference->save();
         
