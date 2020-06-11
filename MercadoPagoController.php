@@ -25,10 +25,8 @@ class MercadoPago
             $item->title = $producto['titulo'];
             $item->unit_price = $producto['precio'];
             $item->quantity = $producto['cantidad'];
-            $item->picture_url = $producto['img'];
+            $item->picture_url = 'https://facualavar-mp-ecommerce-php.herokuapp.com'.$producto['img'];
             $item->description = $producto['descripcion'];
-
-            echo $item->picture_url;
 
             array_push($items, $item);
         }
@@ -47,7 +45,7 @@ $items = array();
 $item = array(
     'id' => 1234,
     'titulo' => $_POST['title'],
-    'img' => __DIR__.$_POST['img'],
+    'img' => $_POST['img'],
     'precio' => $_POST['precio'],
     'cantidad' => $_POST['cantidad'],
     'descripcion' => 'Dispositivo movil de tienda  e-commerce'
