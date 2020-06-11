@@ -74,7 +74,7 @@ class MercadoPago
         $preference->external_reference = 'facualavar@gmail.com';
         $preference->save();
         
-        //header('Location: '. $preference->init_point);
+        header('Location: '. $preference->init_point);
     }
 }
 
