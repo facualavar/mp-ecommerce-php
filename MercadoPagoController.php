@@ -39,7 +39,7 @@ class MercadoPago
         $payer->name = "Lalo";
         $payer->surname = "Landa";
         $payer->email = "test_user_63274575@testuser.com";
-        $payer->phone = array("area_code" => "11", "number" => "222233333");
+        $payer->phone = array("area_code" => "011", "number" => "2222-33333");
         $payer->identification = array(
             "type" => "DNI",
             "number" => "12345678"
@@ -79,12 +79,12 @@ class MercadoPago
 
 $items = array();
 $item = array(
-    'id' => 1234,
+    'id' => "1234",
     'titulo' => $_POST['title'],
     'img' => $_POST['img'],
     'precio' => $_POST['precio'],
     'cantidad' => $_POST['cantidad'],
-    'descripcion' => 'Dispositivo movil de tienda  e-commerce'
+    'descripcion' => 'Dispositivo móvil de Tienda e-commerce'
 );
 
 array_push($items, $item);
